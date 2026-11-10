@@ -1,0 +1,69 @@
+
+/* Modifica o estilo externo da página, cores, alinhamento e tamanho de fontes */
+
+/* 1. RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: darkslategray;
+}
+
+/* 2. CONTAINER FLEX (Deixa as 3 colunas lado a lado) */
+.container-flex {
+    display: flex;             /* Ativa o Flexbox */
+    flex-direction: row;       /* Organiza os itens em linha horizontal */
+    gap: 20px;                 /* Cria um espaçamento de 20px entre as colunas */
+    align-items: flex-start;   /* Alinha todas as colunas pelo topo */
+}
+
+/* 3. ESTILO DE CADA COLUNA */
+.coluna {
+    flex: 1;                   /* Divide o espaço igualmente entre as 3 colunas */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro translúcido para destacar */
+    padding: 20px;
+    border-radius: 8px;        /* Deixa as bordas levemente arredondadas */
+}
+
+/* 4. IMAGENS RESPONSIVAS DENTRO DAS COLUNAS */
+.coluna img {
+    max-width: 100%;           /* Garante que a imagem não ultrapasse o tamanho da coluna */
+    height: auto;              /* Mantém a proporção correta da imagem */
+    display: block;
+    margin: 10px auto;         /* Centraliza a imagem na coluna */
+}
+
+/* 5. TÍTULOS E TEXTOS */
+h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 { 
+    color: antiquewhite;
+    text-align: center;
+    background-color: rgb(5, 5, 5);
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+p {
+    color: antiquewhite;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* 6. CLASSES DE CORES ESPECÍFICAS PARA OS TÍTULOS */
+.tx1 { color: rgb(251, 255, 0); }
+.tx2 { color: rgb(255, 174, 0); }
+.tx3 { color: rgb(0, 255, 13); }   
+.tx4 { color: rgb(47, 0, 255); }   
+.tx5 { color: rgb(255, 0, 234); }
+.tx6 { color: rgb(138, 1, 218); }

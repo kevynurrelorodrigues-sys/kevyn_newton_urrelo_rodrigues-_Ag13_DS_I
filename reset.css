@@ -1,0 +1,33 @@
+/* 1. Zera margens, preenchimentos e define o box-sizing global */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Remove estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* 3. Remove sublinhado e estilização padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 4. Torna imagens fluidas e responsivas por padrão */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 5. Padroniza fontes de formulários */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 6. Suaviza a rolagem da página */
+html {
+    scroll-behavior: smooth;
+}
